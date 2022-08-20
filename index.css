@@ -106,6 +106,8 @@ button:active{
 .imgCont{
     width: 105%;
     height: 40vw;
+    max-height: 31.15vw;
+    min-height: 31.15vw;
     background-color: var(--theme2);
     display: flex;
     justify-content: center;
@@ -429,7 +431,17 @@ hr{
     font-size: 1vw;
     padding: 0;
 }
-
+/* online link */
+.toOnline{
+    position: absolute;
+    bottom: 1vw;
+    right: 2vw;
+    font-size: 1vw;
+    visibility: hidden;
+}
+.toOnline a{
+    color: var(--theme1);
+}
 @media print {
     .imgCont{
         height: 38vw;
@@ -442,6 +454,9 @@ hr{
     }
     .downloadBtn{
         display: none;
+    }
+    .toOnline{
+        visibility: visible;
     }
     @page{
         size: A4 portrait;
